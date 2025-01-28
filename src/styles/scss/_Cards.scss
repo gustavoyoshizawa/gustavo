@@ -1,0 +1,52 @@
+.about-tech {
+  @include d(s) {
+    width: 100%;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include d(m) {
+    @include d-flex-center();
+    gap: 15px;
+  }
+  @include d(s) {
+    @include d-flex-center();
+    gap: 15px;
+  }
+  li {
+    @include d-flex-center();
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    width: 110px;
+    height: 110px;
+    padding: 12px;
+    background: var(--medium-gray);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    @include d(m) {
+      height: 90px;
+      width: 90px;
+    }
+    @include d(s) {
+      height: 75px;
+      width: 90px;
+      padding: 8px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--black);
+    }
+    img {
+      width: 60%;
+      @include d(s) {
+        width: 50%;
+      }
+    }
+  }
+}

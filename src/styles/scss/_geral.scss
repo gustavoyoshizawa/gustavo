@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+html,
+body,
+* {
+  transition: all 0.05s ease;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1.titleSection {
+  @include afterTitle();
+}

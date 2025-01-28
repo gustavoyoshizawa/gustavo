@@ -1,0 +1,122 @@
+.MenuContainer {
+  position: relative;
+}
+
+.icon {
+  z-index: 10;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburguer {
+  position: relative;
+}
+
+.hamburguerIcon {
+  border-top: 3px solid;
+  width: 30px;
+  display: block;
+  color: var(--icons);
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+}
+
+.iconActive .hamburguerIcon {
+  border-top-color: transparent;
+  z-index: 10;
+  &::before {
+    transform: rotate(135deg);
+  }
+  &::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 300px;
+  padding: 60px 40px;
+
+  background-color: var(--white);
+
+  transition: transform 0.5s ease;
+  z-index: 5;
+}
+
+.menuOpen {
+  animation: toLeft 0.5s forwards;
+}
+
+.menuClose {
+  animation: toRight 0.5s forwards;
+  display: none;
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+  a {
+    color: var(--icons);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  svg {
+    color: var(--icons);
+    font-size: 30px;
+  }
+}
+
+.btn-lang {
+  display: flex;
+  gap: 10px;
+  button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  img {
+    height: 26px;
+  }
+}
+
+@keyframes toLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(10px, -2px, -2px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

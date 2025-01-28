@@ -1,0 +1,156 @@
+{
+  "translation": {
+    "header": {
+      "title": ["Desenvolvedor Front-End", "."],
+      "description": [
+        "Apaixonado por tecnologia e em constante evolução no front-end.",
+        "Busco criar interfaces intuitivas, responsivas e criativas.",
+        "Em constante aprendizado para entregar valor."
+      ]
+    },
+    "about": {
+      "title": "Sobre Mim",
+      "description": [
+        "Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais."
+      ],
+      "titles": ["Introdução", "Tecnologias"],
+      "introduction": [
+        "Sou estudante de Sistemas de Informação com projetos em ",
+        "HTML, CSS, JavaScript, React, PHP, WordPress, Bootstrap, SASS e Design Responsivo. ",
+        "Embora sem experiência profissional, invisto em projetos pessoais para aprimorar meus conhecimentos.",
+        "Sou focado, tenho boa comunicação, trabalho bem em equipe e sou flexível para enfrentar desafios. Busco oportunidades para aprender e crescer profissionalmente.",
+        "Estou ",
+        "aberto a novas oportunidades ",
+        "de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades, ficarei ",
+        "feliz em ser contatado."
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "src": "./src/assets/icons/html.png",
+          "alt": "Ícone de HTML"
+        },
+        {
+          "name": "CSS",
+          "src": "./src/assets/icons/css.png",
+          "alt": "Ícone de CSS"
+        },
+        {
+          "name": "Javascript",
+          "src": "./src/assets/icons/js.png",
+          "alt": "Ícone de Javascript"
+        },
+        {
+          "name": "Bootstrap",
+          "src": "./src/assets/icons/bootstrap.png",
+          "alt": "Ícone de Bootstrap"
+        },
+        {
+          "name": "React",
+          "src": "./src/assets/icons/react.png",
+          "alt": "Ícone de React"
+        },
+        {
+          "name": "SASS",
+          "src": "./src/assets/icons/sass.png",
+          "alt": "Ícone de SASS"
+        },
+        {
+          "name": "WordPress",
+          "src": "./src/assets/icons/wordpress.png",
+          "alt": "Ícone de WordPress"
+        },
+        {
+          "name": "PHP",
+          "src": "./src/assets/icons/php.png",
+          "alt": "Ícone de PHP"
+        },
+        {
+          "name": "Figma",
+          "src": "./src/assets/icons/Figma.png",
+          "alt": "Ícone de Figma"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "roles": [
+        {
+          "name": "Programador Front-End",
+          "nivel": "Freelancer",
+          "descricao": "Atuo como programador front-end freelancer desde novembro de 2023, desenvolvendo interfaces modernas e responsivas, com foco em performance, usabilidade e inovação.",
+          "periodo": "Nov 2023 - Presente"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projetos",
+      "jobs": [
+        {
+          "name": "Portfólio de Arquitetura",
+          "description": "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
+          "technologies": ["HTML", "SASS", "JavaScript", "Figma"],
+          "src": "./src/assets/img/Projects/Nadia.jpg",
+          "link": "https://nadiarenovato.com.br"
+        },
+        {
+          "name": "PawHeaven",
+          "description": "Projeto de estudo de um E-commerce de produtos pets, com navegação intuitiva e design alinhado à identidade da marca.",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "WordPress",
+            "Figma"
+          ],
+          "src": "./src/assets/img/Projects/PawHeaven.jpg",
+          "link": "https://pawheavenweb.vercel.app"
+        },
+        {
+          "name": "Doçuras da Cássia",
+          "description": "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
+          "technologies": ["HTML", "CSS", "JavaScript", "Figma"],
+          "src": "./src/assets/img/Projects/Docuras.jpg",
+          "link": "https://docuras-da-cassia.vercel.app"
+        },
+        {
+          "name": "ByteFlow",
+          "description": "Projeto de estudo de uma agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
+          "technologies": ["HTML", "CSS", "Bootstrap", "Figma"],
+          "src": "./src/assets/img/Projects/ByteFlow.jpg",
+          "link": "https://byte-flow-bootstrap.vercel.app"
+        },
+        {
+          "name": "Portfólio",
+          "description": "Portfólio front-end, com design único e funcionalidades avançadas em HTML, SASS, JavaScript, React e prototipado no Figma.",
+          "technologies": ["HTML", "SASS", "Javascript", "React", "Figma"],
+          "src": "./src/assets/img/Projects/Portfolio.jpg"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contato",
+      "fields": {
+        "name": "Nome",
+        "name_placeholder": "Seu nome",
+        "email": "E-mail",
+        "email_placeholder": "seunome@gmail.com",
+        "message": "Sua mensagem",
+        "message_placeholder": "Olá Gustavo, tudo bem?..."
+      },
+      "send_button": "Enviar"
+    },
+    "pokemon": {
+      "title": "Descubra seu Pokémon!",
+      "description": "A jornada pelo portfólio acabou. Mas será que você encontrou um Pokémon raro?",
+      "button": "Capturar"
+    },
+    "footer": {
+      "contact": "Contato",
+      "links": ["LinkedIn", "GitHub", "E-mail", "Whatsapp"],
+      "quote": "“May the JavaScript Force be with you.”",
+      "copyright": "© Gustavo Yoshizawa 2024"
+    }
+  }
+}

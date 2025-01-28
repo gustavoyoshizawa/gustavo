@@ -1,0 +1,210 @@
+.ExpProjSection {
+  height: 100vh;
+  background: var(--dark-gray);
+  .container {
+    max-width: 1600px;
+  }
+  @include d(m) {
+    height: auto;
+    .container {
+      max-width: 860px;
+    }
+  }
+  @include d(s) {
+    height: auto;
+    .container {
+      max-width: 580px;
+    }
+  }
+}
+
+.ExpTitle,
+.ProjTitle {
+  position: relative;
+  margin-bottom: 40px;
+  @include d(m) {
+    margin-bottom: 30px;
+  }
+  @include d(s) {
+    margin-bottom: 20px;
+  }
+  h1 {
+    color: var(--white-default);
+  }
+}
+
+.listExp {
+  li {
+    padding: 20px 0px;
+    position: relative;
+    @include d(s) {
+      padding: 10px 0px;
+    }
+  }
+  h2 {
+    color: var(--white-default);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    @include d(s) {
+      font-size: 18px;
+    }
+  }
+
+  h2 + p {
+    color: var(--pink);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    @include d(s) {
+      font-size: 18px;
+    }
+  }
+  .text {
+    color: var(--white-default);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    max-width: 80%;
+    @include d(m) {
+      max-width: 100%;
+    }
+    @include d(s) {
+      max-width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  .text + p {
+    color: var(--white-default);
+    font-weight: bold;
+    margin-bottom: 10px;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 50%;
+      height: 1px;
+      background: var(--white-default);
+      bottom: 0;
+      left: 30%;
+      transform: translateX(-30%);
+      @include d(m) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include d(s) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+//
+.projects-container {
+  @include d-flex-center();
+  flex-direction: column;
+  @include d(m) {
+    align-items: normal;
+  }
+}
+
+.projects {
+  @include d(m) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  @include d(s) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.carousel-btn {
+  @include d-flex-center();
+  background: none;
+  color: var(--pink);
+  cursor: pointer;
+  font-size: 40px;
+  border: none;
+  &::disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+.carousel-items {
+  position: relative;
+}
+.carousel-item {
+  display: grid;
+  grid-template-columns: auto 2fr;
+  margin: 26px 0px;
+  width: 100%;
+  gap: 10px;
+  @include d(s) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  img {
+    border-radius: 5px;
+    border: 1px solid var(--white-default);
+  }
+
+  a {
+    max-height: 162px;
+  }
+}
+
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include d(s) {
+    gap: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    color: var(--white-default);
+  }
+  p {
+    font-size: clamp(14px, 1vw, 16px);
+    color: var(--white-default);
+    font-weight: 300;
+  }
+}
+
+.tecnologiasArray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  li {
+    background: var(--black);
+    color: var(--white);
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .carousel-item {
+    padding: 0px 24px 0px 0px;
+  }
+  .ExpTitle,
+  .ProjTitle {
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+
+.ExpProjItems {
+  @include d(m) {
+    .col-6 {
+      width: 100%;
+    }
+  }
+}

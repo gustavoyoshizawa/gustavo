@@ -1,0 +1,31 @@
+.section-indicators {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 200;
+  @include d(m) {
+    display: none;
+  }
+  @include d(s) {
+    display: none;
+  }
+  a {
+    width: 14px;
+    height: 14px;
+    background-color: var(--teste);
+    opacity: 0.5;
+    border-radius: 50%;
+    opacity: 0.5;
+    @include d(m) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  a.active {
+    background-color: var(--strong);
+    opacity: 1;
+  }
+}

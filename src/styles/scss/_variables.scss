@@ -1,0 +1,213 @@
+// Color e Font
+:root {
+  --dark: #121212;
+  --dark-gray: #30343f;
+  --soft-gray: #b0b3b8;
+  --pink: #89023e;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #ebebeb;
+  --medium-gray: #d9d9d9;
+  --text-gray: #3c3c3c;
+  --text-home: #89023e;
+  --dot: #89023e;
+  --sidebar: #89023e;
+  --strong: #89023e;
+  --white-default: #ffffff;
+}
+html.light {
+  --dark: #121212;
+  --dark-gray: #30343f;
+  --soft-gray: #b0b3b8;
+  --pink: #89023e;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #ebebeb;
+  --medium-gray: #d9d9d9;
+  --text-gray: #3c3c3c;
+  --text-home: #89023e;
+  --dot: #89023e;
+  --sidebar: #89023e;
+  --strong: #89023e;
+  --white-default: #ffffff;
+  --teste: #000000b4;
+}
+html.dark {
+  --dark: #575757;
+  --dark-gray: #121212;
+  --soft-gray: #121212;
+  --pink: #575757;
+  --white: #000000;
+  --black: #ffffff;
+  --light-gray: #333333;
+  --medium-gray: #3b3b3b;
+  --text-gray: #ffffff;
+  --text-home: #b0b3b8;
+  --dot: #b0b3b8;
+  --sidebar: #121212;
+  --strong: #000000;
+  --white-default: #ffffff;
+  --teste: #aaaaaab4;
+}
+
+$font: "Poppins", Helvetica;
+
+$cols: 12;
+$gutter: 20px;
+$l-device: 1200px;
+$m-device: 860px;
+$s-device: 580px;
+
+// Responsivo
+@mixin d($size) {
+  @if $size == l {
+    @media screen and (min-width: #{$l-device}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device - 1}) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: #{$m-device - 1}) {
+      @content;
+    }
+  }
+}
+
+// Grid
+@function col($col, $offset: false) {
+  $width: $col / $cols * 100%;
+  $result: calc(#{$width - #{$gutter}});
+  @if $offset == offset {
+    $gutter: $gutter / 2;
+    $result: calc(#{$width + #{$gutter}});
+  }
+  @return calc(#{$width} - #{$gutter});
+}
+
+// Grid Class
+@for $i from 1 through $cols {
+  .col-#{$i} {
+    width: col($i);
+  }
+}
+
+// Mixin estrutura Grid
+@mixin grid-structure {
+  float: left;
+  min-height: 1px;
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
+  @include d(s) {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+
+[class^="col-"] {
+  @include grid-structure();
+}
+
+// offset Class
+@for $i from 1 through $cols {
+  .offset-#{$i} {
+    margin-left: col($i, offset);
+    @extend %offset;
+  }
+}
+@include d(s) {
+  %offset {
+    margin-left: 0px;
+  }
+}
+
+// Clearfix
+@mixin clearfix {
+  &::after,
+  &::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container {
+  max-width: $l-device;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include d(m) {
+    max-width: $m-device;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include d(s) {
+    max-width: $s-device;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include clearfix();
+}
+.container {
+  @include container();
+}
+
+@mixin row {
+  position: relative;
+  // margin-left: -$gutter / 2;
+  // margin-right: -$gutter / 2;
+  @include d(s) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  @include clearfix();
+}
+.row {
+  @include row;
+}
+
+@mixin d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin title {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@mixin afterTitle {
+  @include title();
+  @include d(m) {
+    font-size: 40px;
+  }
+  @include d(s) {
+    font-size: 32px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: var(--pink);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include d(m) {
+      height: 8px;
+      width: 38px;
+    }
+    @include d(s) {
+      height: 8px;
+      width: 30px;
+    }
+  }
+}
