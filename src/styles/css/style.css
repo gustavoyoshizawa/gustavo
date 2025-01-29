@@ -1271,6 +1271,16 @@ textarea {
   font-size: 250px;
   color: var(--medium-gray);
 }
+@media screen and (min-width: 860px) and (max-width: 1199px) {
+  .flip-card-front span {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 859px) {
+  .flip-card-front span {
+    font-size: 150px;
+  }
+}
 
 .flip-card-back {
   display: flex;

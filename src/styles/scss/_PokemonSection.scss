@@ -82,6 +82,12 @@
     align-items: center;
     font-size: 250px;
     color: var(--medium-gray);
+    @include d(m) {
+      font-size: 200px;
+    }
+    @include d(s) {
+      font-size: 150px;
+    }
   }
 }
 
