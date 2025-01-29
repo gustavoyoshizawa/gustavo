@@ -27,47 +27,47 @@
       "technologies": [
         {
           "name": "HTML",
-          "src": "/src/assets/icons/html.png",
+          "src": "/assets/icons/html.png",
           "alt": "Ícone de HTML"
         },
         {
           "name": "CSS",
-          "src": "/src/assets/icons/css.png",
+          "src": "/assets/icons/css.png",
           "alt": "Ícone de CSS"
         },
         {
           "name": "Javascript",
-          "src": "/src/assets/icons/js.png",
+          "src": "/assets/icons/js.png",
           "alt": "Ícone de Javascript"
         },
         {
           "name": "Bootstrap",
-          "src": "/src/assets/icons/bootstrap.png",
+          "src": "/assets/icons/bootstrap.png",
           "alt": "Ícone de Bootstrap"
         },
         {
           "name": "React",
-          "src": "/src/assets/icons/react.png",
+          "src": "/assets/icons/react.png",
           "alt": "Ícone de React"
         },
         {
           "name": "SASS",
-          "src": "/src/assets/icons/sass.png",
+          "src": "/assets/icons/sass.png",
           "alt": "Ícone de SASS"
         },
         {
           "name": "WordPress",
-          "src": "/src/assets/icons/wordpress.png",
+          "src": "/assets/icons/wordpress.png",
           "alt": "Ícone de WordPress"
         },
         {
           "name": "PHP",
-          "src": "/src/assets/icons/php.png",
+          "src": "/assets/icons/php.png",
           "alt": "Ícone de PHP"
         },
         {
           "name": "Figma",
-          "src": "/src/assets/icons/Figma.png",
+          "src": "/assets/icons/Figma.png",
           "alt": "Ícone de Figma"
         }
       ]
@@ -90,7 +90,7 @@
           "name": "Portfólio de Arquitetura",
           "description": "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
           "technologies": ["HTML", "SASS", "JavaScript", "Figma"],
-          "src": "/src/assets/img/Projects/Nadia.jpg",
+          "src": "/assets/img/Projects/Nadia.jpg",
           "link": "https://nadiarenovato.com.br"
         },
         {
@@ -104,28 +104,28 @@
             "WordPress",
             "Figma"
           ],
-          "src": "/src/assets/img/Projects/PawHeaven.jpg",
+          "src": "/assets/img/Projects/PawHeaven.jpg",
           "link": "https://pawheavenweb.vercel.app"
         },
         {
           "name": "Doçuras da Cássia",
           "description": "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
           "technologies": ["HTML", "CSS", "JavaScript", "Figma"],
-          "src": "/src/assets/img/Projects/Docuras.jpg",
+          "src": "/assets/img/Projects/Docuras.jpg",
           "link": "https://docuras-da-cassia.vercel.app"
         },
         {
           "name": "ByteFlow",
           "description": "Projeto de estudo de uma agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
           "technologies": ["HTML", "CSS", "Bootstrap", "Figma"],
-          "src": "/src/assets/img/Projects/ByteFlow.jpg",
+          "src": "/assets/img/Projects/ByteFlow.jpg",
           "link": "https://byte-flow-bootstrap.vercel.app"
         },
         {
           "name": "Portfólio",
           "description": "Portfólio front-end, com design único e funcionalidades avançadas em HTML, SASS, JavaScript, React e prototipado no Figma.",
           "technologies": ["HTML", "SASS", "Javascript", "React", "Figma"],
-          "src": "./src/assets/img/Projects/Portfolio.jpg"
+          "src": "./assets/img/Projects/Portfolio.jpg"
         }
       ]
     },
