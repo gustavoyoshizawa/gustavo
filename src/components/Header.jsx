@@ -1,7 +1,4 @@
-import logoRosa from "/assets/img/logos/logo-rosa.svg";
-
 import MenuNav from "./MenuNav";
-
 import "../styles/css/style.min.css";
 
 const Header = () => {
@@ -10,7 +7,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <a href="">
-            <img src={logoRosa} alt="" />
+            <img src="/assets/img/logos/logo-rosa.svg" alt="" />
           </a>
           <div>
             <MenuNav />
