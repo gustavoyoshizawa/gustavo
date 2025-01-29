@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
-import Title from "./title";
+import Title from "./Title";
 import Subtitle from "./Subtitle";
 import Text from "./Text";
 

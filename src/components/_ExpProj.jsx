@@ -1,4 +1,4 @@
-import Title from "./title";
+import Title from "./Title";
 import "../styles/css/style.min.css";
 import Jobs from "./jobs.jsx";
 import CardProjects from "./CardProjects";

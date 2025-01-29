@@ -1,4 +1,4 @@
-import Title from "./title";
+import Title from "./Title";
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const SocialMedias = () => {

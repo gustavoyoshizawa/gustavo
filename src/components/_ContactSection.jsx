@@ -1,4 +1,4 @@
-import Title from "./title";
+import Title from "./Title";
 import Input from "./Input";
 import Textarea from "./Textarea";
 import Button from "./Button";

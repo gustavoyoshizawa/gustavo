@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Title from "./title";
+import Title from "./Title";
 import Text from "./Text";
 import { FaCaretUp, FaCaretDown } from "react-icons/fa";
 

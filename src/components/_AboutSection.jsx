@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Title from "./title";
+import Title from "./Title";
 import Subtitle from "./subtitle";
 import Text from "./text";
 import Cards from "./cards";

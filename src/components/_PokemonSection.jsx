@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Title from "./title";
+import Title from "./Title";
 import Subtitle from "./subtitle";
 import { useTranslation } from "react-i18next";
 
