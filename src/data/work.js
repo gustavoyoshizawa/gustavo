@@ -14,7 +14,7 @@ const projects = [
     descricao:
       "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
     tecnologias: ["HTML", "SASS", "JavaScript", "Figma"],
-    src: "./src/assets/img/Projects/Nadia.jpg",
+    src: "../src/assets/img/Projects/Nadia.jpg",
     link: "https://nadiarenovato.com.br",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     descricao:
       "Projeto de estudo de um E-commerce de produtos pets, com navegação intuitiva e design alinhado à identidade da marca.",
     tecnologias: ["HTML", "CSS", "JavaScript", "PHP", "WordPress", "Figma"],
-    src: "./src/assets/img/Projects/PawHeaven.jpg",
+    src: "../src/assets/img/Projects/PawHeaven.jpg",
     link: "https://pawheavenweb.vercel.app",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     descricao:
       "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
     tecnologias: ["HTML", "CSS", "JavaScript", "Figma"],
-    src: "./src/assets/img/Projects/Docuras.jpg",
+    src: "../src/assets/img/Projects/Docuras.jpg",
     link: "https://docuras-da-cassia.vercel.app",
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     descricao:
       "Projeto de estudo de uma de agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
     tecnologias: ["HTML", "CSS", "Bootstrap", "Figma"],
-    src: "./src/assets/img/Projects/ByteFlow.jpg",
+    src: "../src/assets/img/Projects/ByteFlow.jpg",
     link: "https://byte-flow-bootstrap.vercel.app",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     descricao:
       "Portfólio front-end, com design único e funcionalidades avançadas em HTML, SASS, JavaScript, React e prototipado no Figma.",
     tecnologias: ["HTML", "SASS", "Javascript", "React", "Figma"],
-    src: "./src/assets/img/Projects/Portfolio.jpg",
+    src: "../src/assets/img/Projects/Portfolio.jpg",
     // link:"byte-flow-bootstrap.vercel.app",
   },
 ];

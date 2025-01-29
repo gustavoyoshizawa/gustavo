@@ -14,14 +14,14 @@ const _Footer = () => {
             <SocialMedias />
           </div>
           <div className="col-4 vader-footer">
-            <img src={vader} alt="" />
+            <img src={vader} alt="Logo Vader" />
             <blockquote>“May the JavaScript Force be with you.”</blockquote>
           </div>
         </div>
       </div>
       <div className="copyright container">
         <div className="col-12">
-          <p>© Gustavo Yoshizawa 2024</p>
+          <p>© Gustavo Yoshizawa 2025</p>
         </div>
       </div>
     </footer>

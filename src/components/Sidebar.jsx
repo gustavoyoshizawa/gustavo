@@ -5,16 +5,24 @@ import "../styles/css/style.min.css";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.linkedin.com/in/gustavo-yoshizawa-17915619b/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FaLinkedin />
       </a>
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://github.com/gustavoyoshizawa"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FaGithub />
       </a>
-      <a href="mailto:gustavo@example.com">
+      <a href="mailto:gustavoyoshizawa89@gmail.com">
         <FaEnvelope />
       </a>
-      <a href="https://wa.me/1234567890">
+      <a href="https://w.app/jl1qin">
         <FaWhatsapp />
       </a>
     </div>
