@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Title from "./Title";
-import Subtitle from "./subtitle";
+import Subtitle from "./Subtitle";
 import { useTranslation } from "react-i18next";
 
 const PokemonSection = () => {

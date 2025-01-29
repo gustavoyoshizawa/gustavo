@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Title from "./Title";
-import Subtitle from "./subtitle";
-import Text from "./text";
-import Cards from "./cards";
+import Subtitle from "./Subtitle";
+import Text from "./Text";
+import Cards from "./Cards";
 import technologies from "../data/technologies.js";
 import "../styles/css/style.min.css";
 

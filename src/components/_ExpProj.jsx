@@ -1,6 +1,6 @@
 import Title from "./Title";
 import "../styles/css/style.min.css";
-import Jobs from "./jobs.jsx";
+import Jobs from "./Jobs.jsx";
 import CardProjects from "./CardProjects";
 import { useTranslation } from "react-i18next";
 
