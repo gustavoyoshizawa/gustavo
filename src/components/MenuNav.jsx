@@ -2,8 +2,8 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ThemeSwitcher from "./ThemeSwitcher";
-import BrazilFlag from "../assets/img/brazil.png";
-import USAFlag from "../assets/img/united-states.png";
+import BrazilFlag from "/assets/img/brazil.png";
+import USAFlag from "/assets/img/united-states.png";
 
 const MenuNav = () => {
   const [active, setActive] = useState(false);

@@ -1,4 +1,5 @@
-import logoRosa from "../assets/img/logos/logo-rosa.svg";
+import logoRosa from "/assets/img/logos/logo-rosa.svg";
+
 import MenuNav from "./MenuNav";
 
 import "../styles/css/style.min.css";

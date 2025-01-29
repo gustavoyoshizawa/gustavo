@@ -1,5 +1,3 @@
-import logov2 from "../assets/img/logos/logo-v2.png";
-import vader from "../assets/img/icons/darth-vader.png";
 import SocialMedias from "./SocialMedias";
 
 const _Footer = () => {
@@ -8,13 +6,13 @@ const _Footer = () => {
       <div className="container ">
         <div className="col-content">
           <div className="col-4 logo-footer">
-            <img src={logov2} alt="" />
+            <img src="/assets/img/logos/logo-v2.png" alt="" />
           </div>
           <div className="col-4 medias-footer">
             <SocialMedias />
           </div>
           <div className="col-4 vader-footer">
-            <img src={vader} alt="Logo Vader" />
+            <img src="/assets/img/icons/darth-vader.png" alt="Logo Vader" />
             <blockquote>“May the JavaScript Force be with you.”</blockquote>
           </div>
         </div>

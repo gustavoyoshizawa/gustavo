@@ -43,7 +43,7 @@
           "name": "Portfólio de Arquitetura",
           "description": "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
           "technologies": ["HTML", "SASS", "JavaScript", "Figma"],
-          "src": "/src/assets/img/Projects/Nadia.jpg",
+          "src": "/assets/img/Projects/Nadia.jpg",
           "link": "https://nadiarenovato.com.br"
         },
         {
@@ -57,28 +57,28 @@
             "WordPress",
             "Figma"
           ],
-          "src": "/src/assets/img/Projects/PawHeaven.jpg",
+          "src": "/assets/img/Projects/PawHeaven.jpg",
           "link": "https://pawheavenweb.vercel.app"
         },
         {
           "name": "Doçuras da Cássia",
           "description": "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
           "technologies": ["HTML", "CSS", "JavaScript", "Figma"],
-          "src": "/src/assets/img/Projects/Docuras.jpg",
+          "src": "/assets/img/Projects/Docuras.jpg",
           "link": "https://docuras-da-cassia.vercel.app"
         },
         {
           "name": "ByteFlow",
           "description": "Projeto de estudo de uma agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
           "technologies": ["HTML", "CSS", "Bootstrap", "Figma"],
-          "src": "/src/assets/img/Projects/ByteFlow.jpg",
+          "src": "/assets/img/Projects/ByteFlow.jpg",
           "link": "https://byte-flow-bootstrap.vercel.app"
         },
         {
           "name": "Portfólio",
           "description": "Portfólio front-end, com design único e funcionalidades avançadas em HTML, SASS, JavaScript, React e prototipado no Figma.",
           "technologies": ["HTML", "SASS", "Javascript", "React", "Figma"],
-          "src": "/src/assets/img/Projects/Portfolio.jpg"
+          "src": "/assets/img/Projects/Portfolio.jpg"
         }
       ]
     },
