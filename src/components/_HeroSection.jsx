@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
-import profileImage from "../assets/profile.png";
+import profileImage from "../assets/img/profile.png";
+
 import "../styles/css/style.min.css";
 
 const HeroSection = () => {

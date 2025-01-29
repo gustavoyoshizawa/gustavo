@@ -1,5 +1,5 @@
 import logov2 from "../assets/img/logos/logo-v2.png";
-import vader from "../assets/icons/darth-vader.png";
+import vader from "../assets/img/icons/darth-vader.png";
 import SocialMedias from "./SocialMedias";
 
 const _Footer = () => {

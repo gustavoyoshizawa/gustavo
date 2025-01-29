@@ -23,53 +23,6 @@
         "aberto a novas oportunidades ",
         "de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades, ficarei ",
         "feliz em ser contatado."
-      ],
-      "technologies": [
-        {
-          "name": "HTML",
-          "src": "/assets/icons/html.png",
-          "alt": "Ícone de HTML"
-        },
-        {
-          "name": "CSS",
-          "src": "/assets/icons/css.png",
-          "alt": "Ícone de CSS"
-        },
-        {
-          "name": "Javascript",
-          "src": "/assets/icons/js.png",
-          "alt": "Ícone de Javascript"
-        },
-        {
-          "name": "Bootstrap",
-          "src": "/assets/icons/bootstrap.png",
-          "alt": "Ícone de Bootstrap"
-        },
-        {
-          "name": "React",
-          "src": "/assets/icons/react.png",
-          "alt": "Ícone de React"
-        },
-        {
-          "name": "SASS",
-          "src": "/assets/icons/sass.png",
-          "alt": "Ícone de SASS"
-        },
-        {
-          "name": "WordPress",
-          "src": "/assets/icons/wordpress.png",
-          "alt": "Ícone de WordPress"
-        },
-        {
-          "name": "PHP",
-          "src": "/assets/icons/php.png",
-          "alt": "Ícone de PHP"
-        },
-        {
-          "name": "Figma",
-          "src": "/assets/icons/Figma.png",
-          "alt": "Ícone de Figma"
-        }
       ]
     },
     "experience": {
@@ -90,7 +43,7 @@
           "name": "Portfólio de Arquitetura",
           "description": "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
           "technologies": ["HTML", "SASS", "JavaScript", "Figma"],
-          "src": "/assets/img/Projects/Nadia.jpg",
+          "src": "/src/assets/img/Projects/Nadia.jpg",
           "link": "https://nadiarenovato.com.br"
         },
         {
@@ -104,28 +57,28 @@
             "WordPress",
             "Figma"
           ],
-          "src": "/assets/img/Projects/PawHeaven.jpg",
+          "src": "/src/assets/img/Projects/PawHeaven.jpg",
           "link": "https://pawheavenweb.vercel.app"
         },
         {
           "name": "Doçuras da Cássia",
           "description": "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
           "technologies": ["HTML", "CSS", "JavaScript", "Figma"],
-          "src": "/assets/img/Projects/Docuras.jpg",
+          "src": "/src/assets/img/Projects/Docuras.jpg",
           "link": "https://docuras-da-cassia.vercel.app"
         },
         {
           "name": "ByteFlow",
           "description": "Projeto de estudo de uma agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
           "technologies": ["HTML", "CSS", "Bootstrap", "Figma"],
-          "src": "/assets/img/Projects/ByteFlow.jpg",
+          "src": "/src/assets/img/Projects/ByteFlow.jpg",
           "link": "https://byte-flow-bootstrap.vercel.app"
         },
         {
           "name": "Portfólio",
           "description": "Portfólio front-end, com design único e funcionalidades avançadas em HTML, SASS, JavaScript, React e prototipado no Figma.",
           "technologies": ["HTML", "SASS", "Javascript", "React", "Figma"],
-          "src": "./assets/img/Projects/Portfolio.jpg"
+          "src": "/src/assets/img/Projects/Portfolio.jpg"
         }
       ]
     },
