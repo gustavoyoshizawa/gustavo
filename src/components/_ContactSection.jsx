@@ -10,58 +10,48 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const form = e.target;
 
-    const formData = new FormData(form);
+    Swal.fire({
+      title: "E-mail enviado com sucesso!",
+      icon: "success",
+      draggable: true,
+    });
 
-    fetch("/", {
-      method: "POST",
-      body: formData,
-    })
-      .then(() => {
-        Swal.fire({
-          title: "E-mail enviado com sucesso!",
-          icon: "success",
-          draggable: true,
-        });
-
-        form.reset();
-      })
-      .catch(() => {
-        Swal.fire({
-          title: "Erro ao enviar!",
-          icon: "error",
-          draggable: true,
-        });
-      });
+    form.reset();
   };
 
   return (
     <section id="contact" className="contactSection">
       <div className="container">
         <div className="ContactTitle">
-          <Title text={t("contact.title")}></Title>
+          <Title text={t("contact.title")} />
         </div>
 
         <form
           method="POST"
           name="contact"
-          id="formulario"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Não preencha isso: <input name="bot-field" />
+            </label>
+          </p>
 
           <div className="row center">
             <div className="col-4">
               <Input
                 label={t("contact.fields.name")}
                 type="text"
-                name="nome"
-                id="nome"
+                name="name"
+                id="name"
+                required
                 placeholder={t("contact.fields.name_placeholder")}
-              ></Input>
+              />
             </div>
             <div className="col-4">
               <Input
@@ -69,8 +59,9 @@ const ContactSection = () => {
                 type="email"
                 name="email"
                 id="email"
+                required
                 placeholder={t("contact.fields.email_placeholder")}
-              ></Input>
+              />
             </div>
           </div>
 
@@ -78,17 +69,18 @@ const ContactSection = () => {
             <div className="col-8">
               <Textarea
                 label={t("contact.fields.message")}
-                name="mensagem"
-                id="mensagem"
+                name="message"
+                id="message"
                 rows="10"
+                required
                 style={{ resize: "none" }}
                 placeholder={t("contact.fields.message_placeholder")}
-              ></Textarea>
+              />
             </div>
           </div>
 
           <div className="btn-container center">
-            <Button type="submit" text={t("contact.send_button")}></Button>
+            <Button type="submit" text={t("contact.send_button")} />
           </div>
         </form>
       </div>
