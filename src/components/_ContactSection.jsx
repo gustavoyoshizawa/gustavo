@@ -37,11 +37,6 @@ const ContactSection = () => {
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contato" />
-          <p hidden>
-            <label>
-              Não preencha isso: <input name="bot-field" />
-            </label>
-          </p>
 
           <div className="row center">
             <div className="col-4">
