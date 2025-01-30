@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 
 const ContactSection = () => {
+  console.log("Rendering Contact Section");
   const { t } = useTranslation();
 
   const handleSubmit = (e) => {
