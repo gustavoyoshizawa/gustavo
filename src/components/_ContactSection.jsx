@@ -10,11 +10,31 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "E-mail enviado com sucesso!",
-      icon: "success",
-      draggable: true,
-    });
+
+    const form = e.target;
+
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      body: formData,
+    })
+      .then(() => {
+        Swal.fire({
+          title: "E-mail enviado com sucesso!",
+          icon: "success",
+          draggable: true,
+        });
+
+        form.reset();
+      })
+      .catch(() => {
+        Swal.fire({
+          title: "Erro ao enviar!",
+          icon: "error",
+          draggable: true,
+        });
+      });
   };
 
   return (
@@ -23,20 +43,23 @@ const ContactSection = () => {
         <div className="ContactTitle">
           <Title text={t("contact.title")}></Title>
         </div>
+
         <form
           method="POST"
-          name="formulario-login"
+          name="contact"
           id="formulario"
           data-netlify="true"
+          onSubmit={handleSubmit}
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <div className="row center">
             <div className="col-4">
               <Input
                 label={t("contact.fields.name")}
                 type="text"
                 name="nome"
-                id="nome 
-              "
+                id="nome"
                 placeholder={t("contact.fields.name_placeholder")}
               ></Input>
             </div>
@@ -50,11 +73,11 @@ const ContactSection = () => {
               ></Input>
             </div>
           </div>
+
           <div className="row center">
             <div className="col-8">
               <Textarea
                 label={t("contact.fields.message")}
-                type="text"
                 name="mensagem"
                 id="mensagem"
                 rows="10"
@@ -63,12 +86,9 @@ const ContactSection = () => {
               ></Textarea>
             </div>
           </div>
+
           <div className="btn-container center">
-            <Button
-              onClick={handleSubmit}
-              type="submit"
-              text={t("contact.send_button")}
-            ></Button>
+            <Button type="submit" text={t("contact.send_button")}></Button>
           </div>
         </form>
       </div>
