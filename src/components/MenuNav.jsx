@@ -29,13 +29,13 @@ const MenuNav = () => {
             </li>
             <li className="btn-lang">
               <button onClick={() => handleChangeLanguage("pt")}>
-                <img src={BrazilFlag} alt="" />
+                <img src={BrazilFlag} alt="Brazil Flag" />
               </button>
               <button>
                 <img
                   onClick={() => handleChangeLanguage("en")}
                   src={USAFlag}
-                  alt=""
+                  alt="USA Flag"
                 />
               </button>
             </li>

@@ -7,7 +7,6 @@ import ExpProj from "./components/_ExpProj";
 import ContactSection from "./components/_ContactSection";
 import PokemonSection from "./components/_PokemonSection";
 import Footer from "./components/_Footer";
-// import { useState } from "react";
 
 function App() {
   return (

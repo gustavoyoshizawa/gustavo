@@ -1,20 +1,20 @@
 import "../styles/css/style.min.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const SectionIndicators = () => {
-  const [activeSection, setActiveSection] = useState(0); // Estado da seção ativa
-  const sections = ["home", "about", "exp", "contact", "pokemon", "footer"]; // IDs das seções
+  const [activeSection, setActiveSection] = useState(0);
+  const sections = ["home", "about", "exp", "contact", "pokemon", "footer"];
 
   useEffect(() => {
     const handleScroll = () => {
       const sectionOffsets = sections.map((id) => {
         const element = document.getElementById(id);
-        return element ? element.offsetTop : 0; // Obtém a posição de cada seção
+        return element ? element.offsetTop : 0;
       });
 
-      const scrollPosition = window.scrollY + window.innerHeight / 20; // Posição de rolagem + ajuste central
+      const scrollPosition = window.scrollY + window.innerHeight / 20;
 
-      // Determina qual seção está visível
       const currentSection = sectionOffsets.findIndex(
         (offset, index) =>
           scrollPosition >= offset &&
@@ -26,17 +26,20 @@ const SectionIndicators = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Limpa o listener
+    return () => window.removeEventListener("scroll", handleScroll); //
   }, [sections]);
 
   return (
     <div className="section-indicators">
       {sections.map((id, index) => (
-        <a
+        <Link
+          to={id}
+          smooth={true}
+          duration={200}
           key={id}
           href={`#${id}`}
-          className={index === activeSection ? "active" : ""} // Aplica a classe "active" na seção correspondente
-        ></a>
+          className={index === activeSection ? "active" : ""}
+        ></Link>
       ))}
     </div>
   );

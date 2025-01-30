@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Title from "./Title";
 import Text from "./Text";
 import { FaCaretUp, FaCaretDown } from "react-icons/fa";
@@ -10,8 +10,25 @@ const CardProjects = () => {
   const { t } = useTranslation();
   const projects = t("projects.jobs", { returnObjects: true });
 
-  const visibleCount = 3;
+  // const visibleCount = 3;
+  const [visibleCount, setVisibleCount] = useState(3);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth <= 600) {
+        setVisibleCount(1);
+      } else if (window.innerWidth <= 900) {
+        setVisibleCount(2);
+      } else {
+        setVisibleCount(3);
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
 
   const handleNext = () => {
     if (currentIndex + visibleCount < projects.length) {

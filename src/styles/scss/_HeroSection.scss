@@ -8,10 +8,13 @@
     @include d-flex-center;
     flex-direction: column;
     width: 65%;
+    opacity: 0;
+
     h2 {
       color: var(--soft-gray);
       font-size: clamp(3rem, 5vw, 4.5rem);
       max-width: 12ch;
+      transform: translateY(20px);
       @include d(m) {
         color: var(--soft-gray);
         font-size: clamp(3rem, 5vw, 4.5rem);

@@ -21,6 +21,9 @@ form {
   @include d(m) {
     margin-top: 50px;
   }
+  @include d(s) {
+    margin-top: 50px;
+  }
 }
 
 .center {

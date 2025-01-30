@@ -412,11 +412,13 @@ h1.titleSection::after {
   align-items: center;
   flex-direction: column;
   width: 65%;
+  opacity: 0;
 }
 .hero-section .hero-text h2 {
   color: var(--soft-gray);
   font-size: clamp(3rem, 5vw, 4.5rem);
   max-width: 12ch;
+  transform: translateY(20px);
 }
 @media screen and (min-width: 860px) and (max-width: 1199px) {
   .hero-section .hero-text h2 {
@@ -1096,6 +1098,11 @@ form {
   margin-top: 100px;
 }
 @media screen and (min-width: 860px) and (max-width: 1199px) {
+  form {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 859px) {
   form {
     margin-top: 50px;
   }

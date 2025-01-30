@@ -6,7 +6,7 @@ const _Footer = () => {
       <div className="container ">
         <div className="col-content">
           <div className="col-4 logo-footer">
-            <img src="/assets/img/logos/logo-v2.png" alt="" />
+            <img src="/assets/img/logos/logo-v2.png" alt="Logo Gustavo" />
           </div>
           <div className="col-4 medias-footer">
             <SocialMedias />

@@ -3,9 +3,19 @@ import Input from "./Input";
 import Textarea from "./Textarea";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
+import Swal from "sweetalert2";
 
 const ContactSection = () => {
   const { t } = useTranslation();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    Swal.fire({
+      title: "E-mail enviado com sucesso!",
+      icon: "success",
+      draggable: true,
+    });
+  };
 
   return (
     <section id="contact" className="contactSection">
@@ -13,7 +23,12 @@ const ContactSection = () => {
         <div className="ContactTitle">
           <Title text={t("contact.title")}></Title>
         </div>
-        <form action="">
+        <form
+          action=""
+          name="formulario-login"
+          id="formulario"
+          data-netlify="true"
+        >
           <div className="row center">
             <div className="col-4">
               <Input
@@ -49,7 +64,11 @@ const ContactSection = () => {
             </div>
           </div>
           <div className="btn-container center">
-            <Button text={t("contact.send_button")}></Button>
+            <Button
+              onClick={handleSubmit}
+              type="submit"
+              text={t("contact.send_button")}
+            ></Button>
           </div>
         </form>
       </div>
