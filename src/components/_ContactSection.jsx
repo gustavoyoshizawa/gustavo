@@ -8,9 +8,9 @@ import Swal from "sweetalert2";
 const ContactSection = () => {
   const { t } = useTranslation();
 
-  const handleSubmit = () => {
-    // e.preventDefault();
-    // const form = e.target;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
 
     Swal.fire({
       title: "E-mail enviado com sucesso!",
@@ -18,7 +18,7 @@ const ContactSection = () => {
       draggable: true,
     });
 
-    // form.reset();
+    form.reset();
   };
 
   return (
