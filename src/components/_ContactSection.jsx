@@ -24,10 +24,9 @@ const ContactSection = () => {
           <Title text={t("contact.title")}></Title>
         </div>
         <form
-          action="POST"
+          method="POST"
           name="formulario-login"
           id="formulario"
-          netlify
           data-netlify="true"
         >
           <div className="row center">
