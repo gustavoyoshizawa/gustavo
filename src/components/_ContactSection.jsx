@@ -31,12 +31,12 @@ const ContactSection = () => {
 
         <form
           method="POST"
-          name="contact"
+          name="contato"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contato" />
           <p hidden>
             <label>
               Não preencha isso: <input name="bot-field" />
