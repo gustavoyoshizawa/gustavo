@@ -27,6 +27,7 @@ const ContactSection = () => {
           action="POST"
           name="formulario-login"
           id="formulario"
+          netlify
           data-netlify="true"
         >
           <div className="row center">
