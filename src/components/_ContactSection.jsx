@@ -1,6 +1,6 @@
 import Title from "./Title";
-import Input from "./Input";
-import Textarea from "./Textarea";
+// import Input from "./Input";
+// import Textarea from "./Textarea";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
@@ -40,38 +40,38 @@ const ContactSection = () => {
 
           <div className="row center">
             <div className="col-4">
-              <Input
-                label={t("contact.fields.name")}
+              <label htmlFor="name">Nome</label>
+              <input
                 type="text"
                 name="name"
                 id="name"
-                required
-                placeholder={t("contact.fields.name_placeholder")}
-              />
+                required=""
+                placeholder="Seu nome"
+              ></input>
             </div>
             <div className="col-4">
-              <Input
-                label="E-mail"
+              <label htmlFor="email">E-mail</label>
+              <input
                 type="email"
                 name="email"
                 id="email"
-                required
-                placeholder={t("contact.fields.email_placeholder")}
-              />
+                required=""
+                placeholder="seunome@gmail.com"
+              ></input>
             </div>
           </div>
 
           <div className="row center">
             <div className="col-8">
-              <Textarea
-                label={t("contact.fields.message")}
+              <label htmlFor="message">Sua mensagem</label>
+              <textarea
                 name="message"
                 id="message"
                 rows="10"
-                required
-                style={{ resize: "none" }}
-                placeholder={t("contact.fields.message_placeholder")}
-              />
+                required=""
+                placeholder="Olá Gustavo, tudo bem?..."
+                style="resize: none;"
+              ></textarea>
             </div>
           </div>
 
