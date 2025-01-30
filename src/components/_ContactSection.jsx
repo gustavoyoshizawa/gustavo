@@ -24,7 +24,7 @@ const ContactSection = () => {
           <Title text={t("contact.title")}></Title>
         </div>
         <form
-          action=""
+          action="POST"
           name="formulario-login"
           id="formulario"
           data-netlify="true"
