@@ -20,16 +20,26 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
     <form
       name="contato"
       data-netlify="true"
-      hidden
       data-netlify-honeypot="bot-field"
+      hidden
     >
-      <input type="text" name="name" id="name" />
-      <input type="email" name="email" id="email" />
-      <textarea name="message" id="message"></textarea>
+      <div>
+        <div>
+          <input type="email" name="name" id="name" />
+        </div>
+        <div>
+          <input type="email" name="email" id="email" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <textarea name="message" id="message" rows="10"></textarea>
+        </div>
+      </div>
     </form>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
