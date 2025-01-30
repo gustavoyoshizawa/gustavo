@@ -19,6 +19,19 @@
     <title>Gustavo Yoshizawa</title>
   </head>
   <body>
+    <form
+      method="POST"
+      name="contato"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      netlify
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contato" />
+      <input type="text" name="name" />
+      <input label="E-mail" type="email" name="email" />
+      <textarea label name="message" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
