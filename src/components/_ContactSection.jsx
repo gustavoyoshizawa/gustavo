@@ -1,6 +1,6 @@
 import Title from "./Title";
-// import Input from "./Input";
-// import Textarea from "./Textarea";
+import Input from "./Input";
+import Textarea from "./Textarea";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
@@ -40,38 +40,38 @@ const ContactSection = () => {
 
           <div className="row center">
             <div className="col-4">
-              <label htmlFor="name">Nome</label>
-              <input
+              <Input
+                label={t("contact.fields.name")}
                 type="text"
                 name="name"
                 id="name"
-                required=""
-                placeholder="Seu nome"
-              ></input>
+                required
+                placeholder={t("contact.fields.name_placeholder")}
+              />
             </div>
             <div className="col-4">
-              <label htmlFor="email">E-mail</label>
-              <input
+              <Input
+                label="E-mail"
                 type="email"
                 name="email"
                 id="email"
-                required=""
-                placeholder="seunome@gmail.com"
-              ></input>
+                required
+                placeholder={t("contact.fields.email_placeholder")}
+              />
             </div>
           </div>
 
           <div className="row center">
             <div className="col-8">
-              <label htmlFor="message">Sua mensagem</label>
-              <textarea
+              <Textarea
+                label={t("contact.fields.message")}
                 name="message"
                 id="message"
                 rows="10"
-                required=""
-                placeholder="Olá Gustavo, tudo bem?... "
+                required
                 style={{ resize: "none" }}
-              ></textarea>
+                placeholder={t("contact.fields.message_placeholder")}
+              />
             </div>
           </div>
 
