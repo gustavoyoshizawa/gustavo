@@ -69,8 +69,8 @@ const ContactSection = () => {
                 id="message"
                 rows="10"
                 required=""
-                placeholder="Olá Gustavo, tudo bem?..."
-                style="resize: none;"
+                placeholder="Olá Gustavo, tudo bem?... "
+                style={{ resize: "none" }}
               ></textarea>
             </div>
           </div>
