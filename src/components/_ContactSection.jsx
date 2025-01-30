@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Title from "./Title";
 import Input from "./Input";
 import Textarea from "./Textarea";
@@ -7,9 +6,6 @@ import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 
 const ContactSection = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   console.log("Rendering Contact Section");
   const { t } = useTranslation();
 
@@ -49,8 +45,6 @@ const ContactSection = () => {
                 type="text"
                 name="name"
                 id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
                 required
                 placeholder={t("contact.fields.name_placeholder")}
               />
@@ -61,8 +55,6 @@ const ContactSection = () => {
                 type="email"
                 name="email"
                 id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder={t("contact.fields.email_placeholder")}
               />
@@ -75,8 +67,6 @@ const ContactSection = () => {
                 label={t("contact.fields.message")}
                 name="message"
                 id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
                 rows="10"
                 required
                 style={{ resize: "none" }}
