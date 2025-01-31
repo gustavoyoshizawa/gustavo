@@ -58,11 +58,10 @@
 }
 
 .menuOpen {
-  animation: toLeft 0.5s forwards;
+  animation: toLeft 0.3s forwards;
 }
 
 .menuClose {
-  animation: toRight 0.5s forwards;
   display: none;
 }
 
@@ -75,7 +74,8 @@
     display: flex;
     justify-content: space-between;
     font-size: 24px;
-    li {
+    li,
+    a {
       display: flex;
       align-items: center;
     }
@@ -113,7 +113,7 @@
 @keyframes toLeft {
   from {
     opacity: 0;
-    transform: translate3d(10px, -2px, -2px);
+    transform: translate3d(0px, 0px, 10px);
   }
   to {
     opacity: 1;

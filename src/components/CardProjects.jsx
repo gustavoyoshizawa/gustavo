@@ -57,11 +57,13 @@ const CardProjects = () => {
                 <img src={role.src} alt={role.name} />
               </a>
               <div className="carousel-text">
-                <Title
-                  text={role.name}
-                  level={2}
-                  className="titleProject"
-                ></Title>
+                <a href={role.link} target="_blank">
+                  <Title
+                    text={role.name}
+                    level={2}
+                    className="titleProject"
+                  ></Title>
+                </a>
                 <Text>{role.description}</Text>
                 <ul className="tecnologiasArray">
                   {role.technologies.map((tecnologia) => (

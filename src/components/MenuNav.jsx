@@ -7,7 +7,7 @@ import USAFlag from "/assets/img/united-states.png";
 
 const MenuNav = () => {
   const [active, setActive] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const ToggleMode = () => {
     setActive(!active);
   };
@@ -25,7 +25,9 @@ const MenuNav = () => {
         <nav className="list">
           <ul className="listItems">
             <li>
-              <a href="">Meu currículo</a>
+              <a href="/assets/Gustavo.pdf" target="_blank">
+                {t("header.cv")}
+              </a>
             </li>
             <li className="btn-lang">
               <button onClick={() => handleChangeLanguage("pt")}>
@@ -45,16 +47,29 @@ const MenuNav = () => {
             <li>
               <ul>
                 <li>
-                  <FaLinkedin />
+                  <a
+                    href="https://www.linkedin.com/in/gustavo-yoshizawa-17915619b/"
+                    target="_blank"
+                  >
+                    <FaLinkedin />
+                  </a>
                 </li>
                 <li>
-                  <FaGithub />
+                  <a href="https://github.com/gustavoyoshizawa" target="_blank">
+                    {" "}
+                    <FaGithub />
+                  </a>
                 </li>
                 <li>
-                  <FaEnvelope />
+                  <a href="mailto:gustavoyoshizawa89@gmail.com" target="_blank">
+                    <FaEnvelope />
+                  </a>
                 </li>
                 <li>
-                  <FaWhatsapp />
+                  <a href="https://w.app/jl1qin" target="_blank">
+                    {" "}
+                    <FaWhatsapp />
+                  </a>
                 </li>
               </ul>
             </li>

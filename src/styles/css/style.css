@@ -268,6 +268,11 @@ h1.titleSection::after {
   }
 }
 
+.swal2-confirm,
+.swal2-styled {
+  background-color: var(--pink);
+}
+
 .header {
   position: absolute;
   z-index: 10;
@@ -338,11 +343,10 @@ h1.titleSection::after {
 }
 
 .menuOpen {
-  animation: toLeft 0.5s forwards;
+  animation: toLeft 0.3s forwards;
 }
 
 .menuClose {
-  animation: toRight 0.5s forwards;
   display: none;
 }
 
@@ -357,7 +361,8 @@ h1.titleSection::after {
   justify-content: space-between;
   font-size: 24px;
 }
-.listItems ul li {
+.listItems ul li,
+.listItems ul a {
   display: flex;
   align-items: center;
 }
@@ -392,7 +397,7 @@ h1.titleSection::after {
 @keyframes toLeft {
   from {
     opacity: 0;
-    transform: translate3d(10px, -2px, -2px);
+    transform: translate3d(0px, 0px, 10px);
   }
   to {
     opacity: 1;
@@ -441,9 +446,16 @@ h1.titleSection::after {
   font-weight: 400;
   margin-top: 10px;
 }
+@media screen and (min-width: 860px) and (max-width: 1199px) {
+  .hero-section .hero-text .hero-sub-text h4 {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 859px) {
   .hero-section .hero-text .hero-sub-text h4 {
     width: 100%;
+    margin-top: 20px;
   }
 }
 .hero-section .hero-text .hero-sub-text-two {
@@ -1040,6 +1052,9 @@ p.text + p.text {
   font-size: clamp(14px, 1vw, 16px);
   color: var(--white-default);
   font-weight: 300;
+}
+.carousel-text a {
+  color: white;
 }
 
 .tecnologiasArray {

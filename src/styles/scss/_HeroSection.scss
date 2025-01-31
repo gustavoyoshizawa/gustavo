@@ -32,8 +32,13 @@
       color: var(--white);
       font-weight: 400;
       margin-top: 10px;
+      @include d(m) {
+        width: 100%;
+        margin-top: 20px;
+      }
       @include d(s) {
         width: 100%;
+        margin-top: 20px;
       }
     }
     .hero-sub-text-two {

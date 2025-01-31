@@ -168,11 +168,15 @@
   h2 {
     font-size: 20px;
     color: var(--white-default);
+    // border-bottom: 2px solid var(--white);
   }
   p {
     font-size: clamp(14px, 1vw, 16px);
     color: var(--white-default);
     font-weight: 300;
+  }
+  a {
+    color: white;
   }
 }
 
