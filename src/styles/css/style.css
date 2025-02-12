@@ -30,6 +30,7 @@ html.light {
   --dot: #89023e;
   --sidebar: #89023e;
   --strong: #89023e;
+  --icons: #ffffff;
   --white-default: #ffffff;
   --teste: #000000b4;
 }
@@ -566,6 +567,9 @@ h1.titleSection::after {
 .sidebar a {
   color: var(--black);
   font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+.sidebar a:hover {
+  opacity: 0.6;
 }
 @media screen and (min-width: 860px) and (max-width: 1199px) {
   .sidebar {

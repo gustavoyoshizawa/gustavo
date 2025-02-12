@@ -22,7 +22,7 @@ const Sidebar = () => {
       <a href="mailto:gustavoyoshizawa89@gmail.com">
         <FaEnvelope />
       </a>
-      <a href="https://w.app/jl1qin">
+      <a href="https://wa.me/5511983339019?text=Ol%C3%A1%20Gustavo%2C%20tudo%20bem%3F%0A%0AVim%20pelo%20seu%20portf%C3%B3lio%2C%20podemos%20conversar%3F">
         <FaWhatsapp />
       </a>
     </div>

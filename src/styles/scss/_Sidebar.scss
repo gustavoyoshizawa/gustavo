@@ -11,6 +11,9 @@
   a {
     color: var(--black);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
+    &:hover {
+      opacity: 0.6;
+    }
   }
   @include d(m) {
     top: 34%;
