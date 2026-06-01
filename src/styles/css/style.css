@@ -235,6 +235,10 @@ html.dark {
   font-family: "Poppins", Helvetica;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body,
 * {
@@ -720,7 +724,7 @@ p.text + p.text {
 @media screen and (max-width: 859px) {
   .about-info {
     margin-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
 }
 .about-info h2 {

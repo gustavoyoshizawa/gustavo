@@ -7,6 +7,11 @@ const technologies = {
       src: "/assets/img/icons/python-original.svg",
       alt: "Python icon",
     },
+    {
+      name: "Pandas",
+      src: "/assets/img/icons/pandas-original.svg",
+      alt: "Pandas icon",
+    },
     { name: "SQL", icon: FaDatabase, color: "#4479a1" },
     { name: "ETL / ELT", icon: FaCode, color: "#7c3aed" },
     { name: "AWS", icon: FaAws, color: "#ff9900" },
@@ -14,6 +19,11 @@ const technologies = {
       name: "Power BI",
       src: "/assets/img/icons/powerbi.svg",
       alt: "Power BI icon",
+    },
+    {
+      name: "Excel",
+      src: "/assets/img/icons/excel-original.svg",
+      alt: "Excel icon",
     },
     {
       name: "Docker",
