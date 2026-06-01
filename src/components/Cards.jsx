@@ -3,12 +3,23 @@ import PropTypes from "prop-types";
 const Cards = ({ items }) => {
   return (
     <ul className="cards">
-      {items.map((item) => (
-        <li key={item.name}>
-          <p>{item.name}</p>
-          <img src={item.src} alt={item.alt} />
-        </li>
-      ))}
+      {items.map((item) => {
+        const Icon = item.icon;
+
+        return (
+          <li
+            key={item.name}
+            style={{ "--technology-color": item.color }}
+          >
+            <p>{item.name}</p>
+            {Icon ? (
+              <Icon aria-hidden="true" className="technology-icon" />
+            ) : (
+              <img className="technology-image" src={item.src} alt={item.alt} />
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 };
@@ -16,11 +27,13 @@ const Cards = ({ items }) => {
 Cards.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired, // O nome é obrigatório
-      src: PropTypes.string.isRequired, // O caminho da imagem é obrigatório
-      alt: PropTypes.string, // O texto alternativo da imagem é opcional
+      name: PropTypes.string.isRequired,
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      icon: PropTypes.elementType,
+      color: PropTypes.string,
     })
-  ).isRequired, // 'items' é um array obrigatório
+  ).isRequired,
 };
 
 export default Cards;

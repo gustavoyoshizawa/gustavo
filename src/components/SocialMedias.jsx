@@ -14,7 +14,7 @@ const SocialMedias = () => {
       ></Title>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/gustavo-yoshizawa-17915619b/">
+          <a href="https://www.linkedin.com/in/gustavo-yoshizawa/">
             <FaLinkedin />
             <p>LinkedIn</p>
           </a>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" fill="none" role="img" aria-label="Power BI">
+  <defs>
+    <mask id="powerbi-mask" maskUnits="userSpaceOnUse" x="200" y="0" width="1200" height="1600">
+      <path d="M1333.25 0C1370.11 0 1400 29.8849 1400 66.75V1533.25C1400 1570.11 1370.11 1600 1333.25 1600H266.667C229.848 1600 200 1570.15 200 1533.33V866.667C200 829.848 229.848 800 266.667 800H525V466.667C525 429.848 554.848 400 591.667 400H850V66.75C850 29.885 879.885 0 916.75 0H1333.25Z" fill="#fff"/>
+    </mask>
+    <linearGradient id="powerbi-dark" x1="758.333" y1="0" x2="1447.82" y2="1507.15" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6AD10"/>
+      <stop offset="1" stop-color="#C87E0E"/>
+    </linearGradient>
+    <linearGradient id="powerbi-medium" x1="524.955" y1="400" x2="1105.79" y2="1561.67" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D751"/>
+      <stop offset="1" stop-color="#E6AD10"/>
+    </linearGradient>
+    <linearGradient id="powerbi-light" x1="199.955" y1="800" x2="519.784" y2="1581.68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9E589"/>
+      <stop offset="1" stop-color="#F6D751"/>
+    </linearGradient>
+  </defs>
+  <g mask="url(#powerbi-mask)" transform="translate(-200)">
+    <path d="M1400 66.75V1533.25C1400 1570.11 1370.11 1600 1333.25 1600H916.75C879.885 1600 850 1570.11 850 1533.25V66.75C850 29.885 879.885 0 916.75 0H1333.25C1370.12 0 1400 29.8849 1400 66.75Z" fill="url(#powerbi-dark)"/>
+    <path d="M1075 466.667V1600H525V466.667C525 429.848 554.848 400 591.667 400H1008.33C1045.15 400 1075 429.848 1075 466.667Z" fill="url(#powerbi-medium)"/>
+    <path d="M200 866.667V1533.33C200 1570.15 229.848 1600 266.667 1600H750V866.667C750 829.848 720.152 800 683.333 800H266.667C229.848 800 200 829.848 200 866.667Z" fill="url(#powerbi-light)"/>
+  </g>
+</svg>

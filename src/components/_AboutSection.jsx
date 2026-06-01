@@ -4,10 +4,12 @@ import Subtitle from "./Subtitle";
 import Text from "./Text";
 import Cards from "./Cards";
 import technologies from "../data/technologies.js";
+import { useState } from "react";
 import "../styles/css/style.min.css";
 
 const AboutSection = () => {
   const { t } = useTranslation();
+  const [activeTrack, setActiveTrack] = useState("data");
 
   return (
     <section id="about" className="about-section">
@@ -41,8 +43,24 @@ const AboutSection = () => {
             <div className="col-5">
               <div className="about-tech">
                 <Title text={t("about.titles.1")} level={2}></Title>
-
-                <Cards items={technologies}></Cards>
+                <div
+                  aria-label={t("about.tracks.aria")}
+                  className="track-toggle"
+                  role="group"
+                >
+                  {["data", "frontend"].map((track) => (
+                    <button
+                      aria-pressed={activeTrack === track}
+                      className={activeTrack === track ? "active" : ""}
+                      key={track}
+                      onClick={() => setActiveTrack(track)}
+                      type="button"
+                    >
+                      {t(`about.tracks.${track}`)}
+                    </button>
+                  ))}
+                </div>
+                <Cards items={technologies[activeTrack]}></Cards>
               </div>
             </div>
           </div>

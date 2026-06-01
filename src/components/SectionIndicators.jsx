@@ -2,9 +2,10 @@ import "../styles/css/style.min.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
+const sections = ["home", "about", "exp", "contact", "services", "footer"];
+
 const SectionIndicators = () => {
   const [activeSection, setActiveSection] = useState(0);
-  const sections = ["home", "about", "exp", "contact", "pokemon", "footer"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +27,9 @@ const SectionIndicators = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); //
-  }, [sections]);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="section-indicators">
@@ -35,9 +37,10 @@ const SectionIndicators = () => {
         <Link
           to={id}
           smooth={true}
-          duration={200}
+          duration={500}
           key={id}
           href={`#${id}`}
+          aria-label={`Ir para ${id}`}
           className={index === activeSection ? "active" : ""}
         ></Link>
       ))}

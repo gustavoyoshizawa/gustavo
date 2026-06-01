@@ -1,110 +1,166 @@
 {
   "translation": {
     "header": {
-      "title": ["Desenvolvedor Front-End", "."],
+      "title": ["Dados & GenAI", "."],
       "description": [
-        "Apaixonado por tecnologia e em constante evolução no front-end.",
-        "Busco criar interfaces intuitivas, responsivas e criativas.",
-        "Em constante aprendizado para entregar valor."
+        "Engenharia de dados, automação e soluções inteligentes orientadas a valor.",
+        "Pipelines, integração e modelagem para transformar dados em decisões.",
+        "Explorando GenAI sobre bases confiáveis e escaláveis."
       ],
       "cv": "Meu currículo"
     },
     "about": {
       "title": "Sobre Mim",
       "description": [
-        "Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais."
+        "Minha base técnica combina Engenharia de Dados, análise e desenvolvimento de software."
       ],
       "titles": ["Introdução", "Tecnologias"],
       "introduction": [
-        "Sou estudante de Sistemas de Informação com projetos em ",
-        "HTML, CSS, JavaScript, React, PHP, WordPress, Bootstrap, SASS e Design Responsivo. ",
-        "Embora sem experiência profissional, invisto em projetos pessoais para aprimorar meus conhecimentos.",
-        "Sou focado, tenho boa comunicação, trabalho bem em equipe e sou flexível para enfrentar desafios. Busco oportunidades para aprender e crescer profissionalmente.",
-        "Estou ",
-        "aberto a novas oportunidades ",
-        "de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades, ficarei ",
-        "feliz em ser contatado."
-      ]
+        "Sou estudante de Sistemas de Informação na UMC, com foco em ",
+        "Engenharia de Dados e soluções orientadas por dados. ",
+        "Tenho experiência prática na construção de pipelines ETL/ELT, integração de múltiplas fontes e modelagem para análise.",
+        "Atuo com Python, SQL, Power BI e ambientes cloud como AWS S3 e Athena, além de Docker, Git e APIs REST. Minha base em desenvolvimento web complementa a construção de produtos e interfaces para dados.",
+        "Tenho perfil analítico e interesse em ",
+        "arquitetura de dados, automação e GenAI ",
+        "aplicados a soluções escaláveis. Estou ",
+        "aberto a oportunidades na área de dados."
+      ],
+      "tracks": {
+        "aria": "Selecionar trilha de tecnologias",
+        "data": "Dados & GenAI",
+        "frontend": "Front-End"
+      }
     },
     "experience": {
       "title": "Experiência",
       "roles": [
         {
-          "name": "Programador Front-End",
-          "nivel": "Freelancer",
-          "descricao": "Atuo como programador front-end freelancer desde novembro de 2023, desenvolvendo interfaces modernas e responsivas, com foco em performance, usabilidade e inovação.",
-          "periodo": "Nov 2023 - Presente"
+          "name": "Estágio Desenvolvedor Web",
+          "nivel": "Actmob",
+          "descricao": "Desenvolvimento de aplicações com integração de APIs, manipulação de dados externos, análise de performance e criação de componentes reutilizáveis em ambiente ágil.",
+          "periodo": "Mar 2025 - Mar 2026"
+        },
+        {
+          "name": "Conferente",
+          "nivel": "Nadir",
+          "descricao": "Análise e tratamento de dados operacionais com Excel, Power BI e Python, criação de dashboards para KPIs logísticos, processos ETL e melhoria da qualidade dos dados.",
+          "periodo": "Out 2021 - Fev 2024"
         }
       ]
+    },
+    "experienceProjects": {
+      "eyebrow": "Trajetória e entregas",
+      "title": "Experiência & Projetos",
+      "description": "Uma visão direta da minha experiência e dos projetos que consolidaram minha transição para Engenharia de Dados."
     },
     "projects": {
       "title": "Projetos",
-      "jobs": [
-        {
-          "name": "Portfólio de Arquitetura",
-          "description": "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
-          "technologies": ["HTML", "SASS", "JavaScript", "Figma"],
-          "src": "/assets/img/Projects/Nadia.jpg",
-          "link": "https://nadiarenovato.com.br"
-        },
-        {
-          "name": "PawHeaven",
-          "description": "Projeto de estudo de um E-commerce de produtos pets, com navegação intuitiva e design alinhado à identidade da marca.",
-          "technologies": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "WordPress",
-            "Figma"
-          ],
-          "src": "/assets/img/Projects/PawHeaven.jpg",
-          "link": "https://pawheavenweb.vercel.app"
-        },
-        {
-          "name": "Doçuras da Cássia",
-          "description": "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
-          "technologies": ["HTML", "CSS", "JavaScript", "Figma"],
-          "src": "/assets/img/Projects/Docuras.jpg",
-          "link": "https://docuras-da-cassia.vercel.app"
-        },
-        {
-          "name": "ByteFlow",
-          "description": "Projeto de estudo de uma agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
-          "technologies": ["HTML", "CSS", "Bootstrap", "Figma"],
-          "src": "/assets/img/Projects/ByteFlow.jpg",
-          "link": "https://byte-flow-bootstrap.vercel.app"
-        },
-        {
-          "name": "Portfólio",
-          "description": "Portfólio front-end, com design único e funcionalidades avançadas em HTML, SASS, JavaScript, React e prototipado no Figma.",
-          "technologies": ["HTML", "SASS", "Javascript", "React", "Figma"],
-          "src": "/assets/img/Projects/Portfolio.jpg"
-        }
-      ]
+      "previous": "Projeto anterior",
+      "next": "Próximo projeto",
+      "open": "Visitar projeto",
+      "tracks": {
+        "aria": "Selecionar trilha de projetos",
+        "data": "Dados",
+        "frontend": "Front-End"
+      },
+      "groups": {
+        "data": [
+          {
+            "name": "Pipeline para Readmissão Hospitalar",
+            "type": "Medallion Pipeline",
+            "visual": "pipeline",
+            "description": "Pipeline de Engenharia de Dados com arquitetura Medallion, processamento com Pandas, armazenamento Parquet em AWS S3, consultas Athena e modelagem dimensional.",
+            "technologies": ["Python", "Pandas", "Parquet", "AWS S3", "Athena", "SQL", "Git"]
+          },
+          {
+            "name": "Pipeline ETL para CRM",
+            "type": "ETL Pipeline",
+            "visual": "pipeline",
+            "description": "Pipeline completo para análise de satisfação de clientes, integrando arquivos e MySQL, com validações SQL, tratamento em Pandas, retry e containerização.",
+            "technologies": ["Python", "Pandas", "MySQL", "SQL", "Docker", "Retry"]
+          },
+          {
+            "name": "Dashboard de Armazém",
+            "type": "Analytics Dashboard",
+            "visual": "dashboard",
+            "description": "Dashboard para acompanhamento de KPIs logísticos, análise exploratória de dados operacionais e identificação de padrões e desvios para apoiar decisões.",
+            "technologies": ["Power BI", "Excel", "KPIs", "Data Analysis"]
+          }
+        ],
+        "frontend": [
+          {
+            "name": "Portfólio de Arquitetura",
+            "description": "Portfólio de arquitetura com design moderno, interatividade e destaque para projetos de forma clara e atraente.",
+            "technologies": ["HTML", "SASS", "JavaScript", "Figma"],
+            "src": "/assets/img/Projects/Nadia.jpg",
+            "link": "https://nadiarenovato.com.br"
+          },
+          {
+            "name": "PawHeaven",
+            "description": "Projeto de estudo de um E-commerce de produtos pets, com navegação intuitiva e design alinhado à identidade da marca.",
+            "technologies": ["HTML", "CSS", "JavaScript", "PHP", "WordPress", "Figma"],
+            "src": "/assets/img/Projects/PawHeaven.jpg",
+            "link": "https://pawheavenweb.vercel.app"
+          },
+          {
+            "name": "Doçuras da Cássia",
+            "description": "Site de confeitaria com design simples e elegante, destacando os produtos e transmitindo a essência artesanal dos doces.",
+            "technologies": ["HTML", "CSS", "JavaScript", "Figma"],
+            "src": "/assets/img/Projects/Docuras.jpg",
+            "link": "https://docuras-da-cassia.vercel.app"
+          },
+          {
+            "name": "ByteFlow",
+            "description": "Projeto de estudo de uma agência web com design moderno, interface responsiva e profissional alinhado à identidade da empresa.",
+            "technologies": ["HTML", "CSS", "Bootstrap", "Figma"],
+            "src": "/assets/img/Projects/ByteFlow.jpg",
+            "link": "https://byte-flow-bootstrap.vercel.app"
+          },
+          {
+            "name": "Portfólio",
+            "description": "Portfólio com identidade própria e funcionalidades em HTML, SASS, JavaScript e React, prototipado no Figma.",
+            "technologies": ["HTML", "SASS", "Javascript", "React", "Figma"],
+            "src": "/assets/img/Projects/Portfolio.jpg"
+          }
+        ]
+      }
     },
     "contact": {
       "title": "Contato",
-      "fields": {
-        "name": "Nome",
-        "name_placeholder": "Seu nome",
-        "email": "E-mail",
-        "email_placeholder": "seunome@gmail.com",
-        "message": "Sua mensagem",
-        "message_placeholder": "Olá Gustavo, tudo bem?..."
-      },
-      "send_button": "Enviar"
+      "eyebrow": "Vamos conversar",
+      "description": "Estou disponível para oportunidades em Dados, projetos e conversas sobre Engenharia de Dados, automação e GenAI.",
+      "availability": "Disponível para novas oportunidades",
+      "email": "E-mail",
+      "direct": "Canal direto",
+      "directTitle": "Vamos transformar dados em valor.",
+      "directDescription": "Para propostas, oportunidades ou uma boa conversa sobre dados e tecnologia, fale comigo diretamente.",
+      "channels": "Outros canais"
     },
-    "pokemon": {
-      "title": "Descubra seu Pokémon!",
-      "description": "A jornada pelo portfólio acabou. Mas será que você encontrou um Pokémon raro?",
-      "button": "Capturar"
+    "services": {
+      "eyebrow": "Como posso contribuir",
+      "title": "Dados preparados para gerar valor",
+      "description": "Da ingestão à análise, organizo dados para apoiar decisões, automações e soluções inteligentes.",
+      "cta": "Falar sobre um projeto",
+      "items": [
+        {
+          "title": "Pipelines e modelagem",
+          "description": "Construção de fluxos ETL/ELT, integração de fontes e modelagem de dados para análises consistentes."
+        },
+        {
+          "title": "Analytics e qualidade",
+          "description": "Tratamento, validação e visualização de dados para acompanhar KPIs e melhorar a tomada de decisão."
+        },
+        {
+          "title": "Automação e GenAI",
+          "description": "Exploração de soluções inteligentes apoiadas por dados organizados, processos reproduzíveis e automação."
+        }
+      ]
     },
     "footer": {
       "contact": "Contato",
       "links": ["LinkedIn", "GitHub", "E-mail", "Whatsapp"],
-      "quote": "“May the JavaScript Force be with you.”",
-      "copyright": "© Gustavo Yoshizawa 2024"
+      "quote": "Dados confiáveis. Decisões melhores. Soluções escaláveis.",
+      "copyright": "© Gustavo Yoshizawa 2026"
     }
   }
 }

@@ -1,113 +1,94 @@
-import Title from "./Title";
-import Input from "./Input";
-import Textarea from "./Textarea";
-import Button from "./Button";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Swal from "sweetalert2";
-import emailjs from "@emailjs/browser";
+import {
+  FaArrowRight,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
+import Title from "./Title";
 
 const ContactSection = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  console.log("Rendering Contact Section");
-
   const { t } = useTranslation();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    Swal.fire({
-      title: "E-mail enviado com sucesso!",
-      icon: "success",
-      draggable: true,
-    });
-
-    const templateParams = {
-      from_name: name,
-      message: message,
-      email: email,
-    };
-
-    emailjs
-      .send(
-        "service_xman1hf",
-        "template_jk0val2",
-        templateParams,
-        "AseywSNfRRn2D3OIr"
-      )
-      .then(
-        (response) => {
-          console.log("E-mail enviado", response.status, response.text);
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
-  };
 
   return (
     <section id="contact" className="contactSection">
       <div className="container">
-        <div className="ContactTitle">
-          <Title text={t("contact.title")} />
+        <div className="contact-intro">
+          <p className="section-eyebrow">{t("contact.eyebrow")}</p>
+          <div className="ContactTitle">
+            <Title text={t("contact.title")} />
+          </div>
+          <p className="contact-description">{t("contact.description")}</p>
         </div>
-
-        <form name="contato" method="POST" onSubmit={handleSubmit}>
-          <input type="hidden" name="form-name" value="contato" />
-
-          <div className="row center">
-            <div className="col-4">
-              <Input
-                label={t("contact.fields.name")}
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder={t("contact.fields.name_placeholder")}
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-              />
+        <div className="contact-console">
+          <div className="contact-console-bar">
+            <div className="console-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div className="col-4">
-              <Input
-                label="E-mail"
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder={t("contact.fields.email_placeholder")}
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
+            <p>contact.config</p>
+          </div>
+          <div className="contact-console-grid">
+            <div className="contact-primary">
+              <p className="contact-code">01 / {t("contact.direct")}</p>
+              <h2>{t("contact.directTitle")}</h2>
+              <p>{t("contact.directDescription")}</p>
+              <a
+                className="contact-main-link"
+                href="mailto:gustavoyoshizawa89@gmail.com"
+              >
+                <FaEnvelope />
+                <div>
+                  <span>{t("contact.email")}</span>
+                  <strong>gustavoyoshizawa89@gmail.com</strong>
+                </div>
+                <FaArrowRight />
+              </a>
+              <div className="availability">
+                <span></span>
+                {t("contact.availability")}
+              </div>
+            </div>
+            <div className="contact-links">
+              <p className="contact-code">02 / {t("contact.channels")}</p>
+              <a
+                className="contact-card"
+                href="https://wa.me/5511983339019?text=Ol%C3%A1%20Gustavo%2C%20tudo%20bem%3F%0A%0AVim%20pelo%20seu%20portf%C3%B3lio%2C%20podemos%20conversar%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
+                <div>
+                  <span>WhatsApp</span>
+                  <strong>+55 11 98333-9019</strong>
+                </div>
+                <FaArrowRight className="contact-arrow" />
+              </a>
+              <div className="contact-social-grid">
+                <a
+                  className="contact-social"
+                  href="https://www.linkedin.com/in/gustavo-yoshizawa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin />
+                  LinkedIn
+                </a>
+                <a
+                  className="contact-social"
+                  href="https://github.com/gustavoyoshizawa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub />
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
-
-          <div className="row center">
-            <div className="col-8">
-              <Textarea
-                label={t("contact.fields.message")}
-                name="message"
-                id="message"
-                rows="10"
-                required
-                style={{ resize: "none" }}
-                placeholder={t("contact.fields.message_placeholder")}
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
-              />
-            </div>
-          </div>
-
-          <div className="btn-container center">
-            <Button type="submit" text={t("contact.send_button")} />
-          </div>
-        </form>
+        </div>
       </div>
     </section>
   );
