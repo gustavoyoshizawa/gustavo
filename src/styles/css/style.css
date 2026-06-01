@@ -1424,7 +1424,6 @@ button,
 .cards li,
 .contact-card,
 .contact-social,
-.service-card,
 .section-indicators a {
   transition: background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease, color 240ms ease, opacity 240ms ease, transform 420ms var(--ease-out);
 }
@@ -1800,8 +1799,7 @@ h1.titleSection::after {
   position: relative;
 }
 
-.ExpProjSection::before,
-.servicesSection::before {
+.ExpProjSection::before {
   background-image: linear-gradient(var(--tech-grid) 1px, transparent 1px), linear-gradient(90deg, var(--tech-grid) 1px, transparent 1px);
   background-size: 48px 48px;
   content: "";
@@ -1882,8 +1880,7 @@ h1.titleSection::after {
   width: 5px;
 }
 
-.section-number,
-.service-number {
+.section-number {
   color: var(--pink);
   font-size: 0.78rem;
   font-weight: 700;
@@ -2405,120 +2402,6 @@ h1.titleSection::after {
   font-size: 1.26rem;
 }
 
-.servicesSection {
-  background: radial-gradient(circle at 50% 18%, rgba(214, 0, 93, 0.1), transparent 24rem), var(--dark-gray);
-  color: var(--white-default);
-  min-height: 100vh;
-  padding: 92px 0;
-  position: relative;
-}
-
-.servicesSection .container {
-  z-index: 1;
-}
-
-.services-title {
-  color: var(--white-default);
-  margin: 0 auto;
-  max-width: 760px;
-  text-align: center;
-}
-
-.services-title h1 {
-  color: var(--white-default);
-  margin: 0 auto;
-  width: max-content;
-}
-
-.services-intro {
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.8;
-  margin: 16px auto 0;
-  max-width: 620px;
-  text-align: center;
-}
-
-.services-grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 56px;
-}
-
-.service-card {
-  background: var(--dark-surface);
-  border: 1px solid var(--dark-border);
-  border-radius: 16px;
-  min-height: 270px;
-  padding: 26px;
-  position: relative;
-}
-
-.service-card::before {
-  background: var(--neon);
-  box-shadow: var(--neon-glow);
-  content: "";
-  height: 2px;
-  left: 26px;
-  position: absolute;
-  top: -1px;
-  width: 42px;
-}
-
-.service-card:hover {
-  background: rgba(255, 255, 255, 0.09);
-  border-color: rgba(255, 23, 109, 0.42);
-  box-shadow: var(--neon-glow);
-  transform: translateY(-8px);
-}
-
-.service-icon {
-  align-items: center;
-  background: var(--neon-soft);
-  border-radius: 12px;
-  color: var(--pink);
-  display: flex;
-  font-size: 1.4rem;
-  height: 48px;
-  justify-content: center;
-  margin-bottom: 28px;
-  width: 48px;
-}
-
-.service-card h2 {
-  font-size: 1.28rem;
-  letter-spacing: -0.025em;
-  margin-top: 12px;
-}
-
-.service-card > p:last-child {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 0.92rem;
-  line-height: 1.75;
-  margin-top: 12px;
-}
-
-.services-cta {
-  background: var(--neon);
-  border-radius: 999px;
-  color: var(--white-default);
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  margin: 42px auto 0;
-  padding: 15px 24px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: max-content;
-}
-
-.services-cta:hover {
-  box-shadow: 0 14px 30px rgba(255, 23, 109, 0.28);
-  transform: translateY(-3px);
-}
-
 footer {
   background: radial-gradient(circle at 78% 32%, rgba(255, 23, 109, 0.2), transparent 24rem), var(--footer-bg);
   color: var(--footer-text);
@@ -2642,8 +2525,7 @@ footer::before {
   }
   .about-section,
   .ExpProjSection,
-  .contactSection,
-  .servicesSection {
+  .contactSection {
     padding: 72px 0;
   }
   .contact-layout {
@@ -2656,12 +2538,6 @@ footer::before {
   .contact-primary {
     border-bottom: 1px solid var(--dark-border);
     border-right: 0;
-  }
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  .service-card {
-    min-height: auto;
   }
 }
 @media screen and (max-width: 579px) {
@@ -2710,8 +2586,7 @@ footer::before {
   .projects-panel {
     padding: 18px;
   }
-  .exp-intro h1,
-  .services-title h1 {
+  .exp-intro h1 {
     width: auto;
   }
   .carousel-item {

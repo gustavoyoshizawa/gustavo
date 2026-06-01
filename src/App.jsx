@@ -6,13 +6,12 @@ import SectionIndicators from "./components/SectionIndicators";
 import AboutSection from "./components/_AboutSection";
 import ExpProj from "./components/_ExpProj";
 import ContactSection from "./components/_ContactSection";
-import ServicesSection from "./components/_ServicesSection";
 import Footer from "./components/_Footer";
 
 function App() {
   useEffect(() => {
     const targets = document.querySelectorAll(
-      ".about-title, .about-subtitle, .about-text, .about-tech, .exp-intro, .experience-panel, .projects-panel, .ContactTitle, .contact-intro, .contact-links, .services-title, .services-intro, .service-card, .footer-panel"
+      ".about-title, .about-subtitle, .about-text, .about-tech, .exp-intro, .experience-panel, .projects-panel, .ContactTitle, .contact-intro, .contact-links, .footer-panel"
     );
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -62,7 +61,6 @@ function App() {
       <AboutSection />
       <ExpProj />
       <ContactSection />
-      <ServicesSection />
       <Footer />
     </div>
   );

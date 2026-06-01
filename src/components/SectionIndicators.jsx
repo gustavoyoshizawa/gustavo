@@ -2,7 +2,7 @@ import "../styles/css/style.min.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-const sections = ["home", "about", "exp", "contact", "services", "footer"];
+const sections = ["home", "about", "exp", "contact", "footer"];
 
 const SectionIndicators = () => {
   const [activeSection, setActiveSection] = useState(0);

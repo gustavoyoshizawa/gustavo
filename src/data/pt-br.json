@@ -136,26 +136,6 @@
       "directDescription": "Para propostas, oportunidades ou uma boa conversa sobre dados e tecnologia, fale comigo diretamente.",
       "channels": "Outros canais"
     },
-    "services": {
-      "eyebrow": "Como posso contribuir",
-      "title": "Dados preparados para gerar valor",
-      "description": "Da ingestão à análise, organizo dados para apoiar decisões, automações e soluções inteligentes.",
-      "cta": "Falar sobre um projeto",
-      "items": [
-        {
-          "title": "Pipelines e modelagem",
-          "description": "Construção de fluxos ETL/ELT, integração de fontes e modelagem de dados para análises consistentes."
-        },
-        {
-          "title": "Analytics e qualidade",
-          "description": "Tratamento, validação e visualização de dados para acompanhar KPIs e melhorar a tomada de decisão."
-        },
-        {
-          "title": "Automação e GenAI",
-          "description": "Exploração de soluções inteligentes apoiadas por dados organizados, processos reproduzíveis e automação."
-        }
-      ]
-    },
     "footer": {
       "contact": "Contato",
       "links": ["LinkedIn", "GitHub", "E-mail", "Whatsapp"],
